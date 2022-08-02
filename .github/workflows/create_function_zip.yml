@@ -21,9 +21,11 @@ jobs:
 
       - name: "Install, build and zip"
         run: |
+          cd az-function
           npm ci
           npm run build
           npm prune --omit=dev
+          cd ..
           zip -r app.zip . --exclude @.funcignore --exclude .funcignore
 # create a zip that can be deployed to Azure
       - uses: ncipollo/release-action@v1
