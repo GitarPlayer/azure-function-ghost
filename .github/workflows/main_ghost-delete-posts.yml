@@ -42,4 +42,4 @@ jobs:
           app-name: 'ghost-delete-posts'
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_38DA62E6D467472EB5FAFD0C3301A771 }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_4b9d86c621af483dabe6c484fd573973 }}
