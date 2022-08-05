@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/azure/functions-action
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy Node.js project to Azure Function App - ghost-delete-posts
+name: Build and deploy Node.js project to Azure Function App - prod-ghost-web-function-exghjb3mkk3wc
 
 on:
   push:
@@ -39,7 +39,7 @@ jobs:
         uses: Azure/functions-action@v1
         id: fa
         with:
-          app-name: 'ghost-delete-posts'
+          app-name: 'prod-ghost-web-function-exghjb3mkk3wc'
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_4b9d86c621af483dabe6c484fd573973 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A6B857D925854C8AAF19043F753E6C20 }}
