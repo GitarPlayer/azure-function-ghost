@@ -1,2 +1,2 @@
 # azure-function-ghost
-A simple typescript Azure Function who deletes all posts
+A simple JavaScript Azure Function who deletes all ghost posts through the ADMIN API
